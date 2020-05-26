@@ -1,5 +1,3 @@
-console.log("hello world");
-
 function throttle(func, ms) {
   let isThrottled = false;
   let savedArgs;
@@ -24,7 +22,6 @@ function throttle(func, ms) {
       }
     }, ms);
   }
-
   return wrapper;
 }
 
@@ -33,4 +30,4 @@ function mouseMove() {
 }
 
 // mouseMove = throttle(mouseMove, 3000);
-// setInterval(mouseMove, 1000)
+// setInterval(mouseMove, 1000);
